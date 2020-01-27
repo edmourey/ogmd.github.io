@@ -1,0 +1,135 @@
+body{
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    
+}
+header ul{
+    display:flex;
+    color: #ffffff;
+}
+header ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+header a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.contenedor{
+    max-width: 1350px;
+    width: 100%;
+    margin:auto;
+}
+header{
+    background: linear-gradient(rgba(22,23,24,0.5),
+    rgba(27,22,22,0.5)),url(..//Imagenes/banner_first_starwars_negro.png);
+    height: 100vh;
+    background-size: 100% 100%;
+    /*background: fixed;*/
+}
+
+#Contenedor-titulo-flex{
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+}
+
+h1{
+    font-size: 60px;
+    color: #ffffff;
+}
+h2{
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.contenedor-titulo a, #Compromisos a,#Metas a,
+#Compromiso a, #Contacto input[type="submit"]{
+    font-size: 14px;
+    color: #ffffff;
+    background: #273746;
+    padding: 14px;
+    width: 128px;
+    text-align: center;
+    display: -moz-inline-box;
+}
+p.logo{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+nav ul li a{
+    color: #ffffff;
+}
+
+/*empieza la section main*/
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+    margin-right: 50px;
+
+}
+
+#Compromisos .contenerdor-text{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 35px;
+
+}
+
+#Compromisos .text{
+    width: 50%;
+}
+
+/*aqui empieza la meta*/
+.contenedor-Metas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(22, 23, 24, 0.5),
+     rgba(27, 22, 22, 0.5)), url(..//imagenes/CF8.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.Metas-text{
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.Metas-text h4{
+    font-size: 30px;
+    margin: 0;
+    color: #ffffff;
+    
+}
+.Metas-text p{
+    margin-bottom: 20px;
+    height: 194px;
+    color: #ffffff;
+}
+
+/*owl carousel*/
+button.owl-prev, button.owl-next{
+    font-size: 40px !important;
+}
+span{
+    color: #7d776dd6;
+}
+/*comienza impacto*/
