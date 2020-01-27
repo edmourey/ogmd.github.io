@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="Styles/estilos.css">
+    <meta charset="UTF-8">
+    <title>Eagle</title>
+    <meta name="Eagle" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="contenedor">
+                <p class="logo">Eagle</p>
+                <nav>
+                    <ul>
+                        <li><a href="somos.html">Quienes Somos</a></li>
+                        <li><a href="">Compromisos</a></li>
+                        <li><a href="">Metas</a></li>
+                        <li><a href="">Competencias</a></li>
+                        <li><a href="">Impacto Social</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </nav>
+                 
+
+            </div>
+        </div>
+
+        <div class="contenedor" id="Contenedor-titulo-flex">
+            <div class="contenedor-titulo">
+                <h1>Eagle</h1>
+                <h2>First</h2>
+                <a href="">Ver Competencia</a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section id="Compromisos">
+            <div class="contenedor">
+                <h3>Compromisos</h3>
+                <div class="contenedor-text">
+                    <div class="contenedor-img">
+                            <img src="Imagenes/" alt="imagen-aguila">
+                    </div>
+                    <div class="texto">
+                        <p>
+                                Acuerdo formal al que llegan dos o más partes 
+                                tras hacer ciertas concesiones cada una de ellas.
+                                "el compromiso militar de respetar el alto el 
+                                fuego formulado ayer, está en contradicción 
+                                con un nuevo comunicado difundido este mediodía, 
+                                que volvía a amenazar con una guerra total"
+
+                        </p>
+                        <a href="">Ver compromisos</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="Metas">
+            <div class="contenedor">
+                <h3>Metas</h3>
+                <div class="contenedor-Metas">
+                    <div class="Metas-text">
+                        <h4>Vision de Cambio</h4>
+                        <p>
+                                Visión De Cambio
+                                El cambio violento desafiará nuestro entendimiento 
+                                y removerá las bases del mundo que nos rodea, en 
+                                todos los aspectos.Cualquier cosa que hagamos y 
+                                dondequiera que la hagamos, todo está cambiando a 
+                                un ritmo vertiginoso.
+
+                        </p>
+                        <!--img class="icono" src="Imagenes/" alt="Vision-imagen"-->
+                        <a href="">Metas</a>
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </section>
+
+        <section id="competencia">
+            <div class="contenedor">
+                <h3>Competencia</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><a href="www.google.com"><img src="Imagenes/firstrobotics.png" alt="C1"></a></div>
+                    <div class="item"><a href="www.google.com"><img src="Imagenes/first-tech-challenge-vector-logo.png" alt="C2"></a></div>
+                    <div class="item"><a href="www.google.com"><img src="Imagenes/kisspng-first-robotics-competition-first-lego-league-jr-f-5b3da4a8f0e568.9679333315307665049867.jpg" alt="C3"></a></div>
+                    <div class="item"><a href="www.google.com"><img src="Imagenes/descarga.png" alt="C4"></a></div>
+                    <div class="item"><a href="www.google.com"><img src="imagenes/5.png" alt="C5"></a></div>
+
+                </div>
+
+            </div>
+        </section>
+<section id="Impacto">
+    <div class="contenedor">
+        <h3>Impacto</h3>
+        <div class="contenedor-impacto">
+            <div class="item">
+                <ul>
+                    <li><img class="img"src="imagenes/impacto1.png" alt="impacto"></li>
+                    <li>Compromiso 1</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+<section id="CONTACTO">
+    <div class="contenedor">
+        <h3>Contacto</h3>
+        <form action="envio-formulario.html" method="POST" 
+        enctype="multipart/form-data">
+        <input type="text" placeholder="Nombre" name="nombre">
+        <input type="email" placeholder="Email" name="email">
+        <textarea placeholder="Mensaje" name="mensaje" 
+        id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="ENVIAR MENSAJE">
+
+        </form>
+    </div>
+</section>
+
+</main>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+loop:true,
+margin:10,
+nav:true,
+dots: false,
+responsive:{
+    0:{
+        items:1
+    },
+    600:{
+        items:3
+    },
+    1000:{
+        items:4
+    }
+}
+})</script>
+
+<script>
+
+$(document).ready(function(){
+
+$(window).scroll(function(){
+    scroll = $(window).scrollTop();
+    if(scroll > 100){
+        $(".menu .contenedor").css({"position":"fixed"});
+        $(".menu .contenedor").css({"width":"100%"});
+        $(".menu .contenedor").css({"top":"0"});
+        $(".menu .contenedor").css({"background":"#fff"});
+        $(".menu .contenedor a").css({"color":"#000"});
+        $(".logo").css({"color":"#000"});
+        $(".menu ").css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});
+        $(".menu").css({"z-index":"100"})
+    }else{
+//cuando no hay scroll
+        $(".menu .contenedor").css({"position":"relative"});
+        $(".menu .contenedor").css({"background":"transparent"});
+        $(".menu ").css({"box-shadow":"0 0 0"});
+        $(".menu .contenedor a").css({"color":"#fff"});
+        $(".logo").css({"color":"#fff"});
+    }
+})
+
+})
+
+</script>
+<section>
+        <video src="https://www.youtube.com/watch?v=yZJNTRKqT4A" controls>
+            Video not suported</video>
+            <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiPjq3vkYXkAhUE7awKHc0GAO4QjRx6BAgBEAQ&url=https%3A%2F%2Fwww.amazon.com%2FBatman-Decal-Sticker-Silver-Inches%2Fdp%2FB00RMC00NG&psig=AOvVaw2l-8-nBDSUMi-PuZKHptxc&ust=1565967551198249" alt="Eagle-video">
+        
+</section>
+
+
+
+
+
+
+
+
+    </main>
+    
+</body>
+
+
+
+
+
+
+</html>
